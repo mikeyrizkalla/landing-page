@@ -1,0 +1,45 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+.main-nav ul,
+.hero-section,
+.hero-text {
+  display: flex;
+}
+
+body {
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+footer {
+  background-color: #1f2937;
+}
+
+.main-nav ul a {
+  color: #e5e7eb
+}
+
+.main-nav ul .logo {
+  margin-right: auto;
+}
+
+.main-nav ul {
+  gap: 32px;
+  padding-left: 0;
+  margin: 10px;
+}
+
+.hero-text {
+  flex-direction: column;
+}
