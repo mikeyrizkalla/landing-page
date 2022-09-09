@@ -4,13 +4,15 @@
 
 body,
 .main-nav ul,
-.hero-section,
+.header-wrapper,
+.hero,
 .hero-text {
   display: flex;
 }
 
 body {
   flex-direction: column;
+  margin: 0;
 }
 
 ul {
@@ -24,6 +26,14 @@ a {
 header,
 footer {
   background-color: #1f2937;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-wrapper {
+  margin: auto;
+  flex-direction: column;
+  max-width: 70vw;
 }
 
 .main-nav ul a {
@@ -31,15 +41,42 @@ footer {
 }
 
 .main-nav ul .logo {
+  font-size: 1.3rem;
   margin-right: auto;
+  font-weight: bold;
 }
 
 .main-nav ul {
   gap: 32px;
   padding-left: 0;
-  margin: 10px;
+}
+
+.hero {
+  padding: 120px 0;
+  gap: 40px
 }
 
 .hero-text {
   flex-direction: column;
+}
+
+.hero-text h1 {
+  font: extra-bold 48px;
+  color: #f9faf8;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero-button {
+  background-color: #3882f6;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
 }
