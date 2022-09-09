@@ -6,7 +6,10 @@ body,
 .main-nav ul,
 .header-wrapper,
 .hero,
-.hero-text {
+.hero-text,
+.main-wrapper,
+.main-gallery,
+.main-images {
   display: flex;
 }
 
@@ -30,7 +33,8 @@ footer {
   align-items: center;
 }
 
-.header-wrapper {
+.header-wrapper,
+.main-wrapper {
   margin: auto;
   flex-direction: column;
   max-width: 70vw;
@@ -79,4 +83,22 @@ footer {
   height: 40px;
   border: none;
   border-radius: 5px;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.main-content h2 {
+  font: extra-bold 36px;
+  color: #1f2937;
+}
+
+.main-gallery {
+  flex-direction: row;
+  gap: 50px;
+}
+
+.images img {
+  border-radius: 20px;
 }
