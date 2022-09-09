@@ -8,7 +8,10 @@ body,
 .hero-text,
 .main-gallery,
 .main-images,
-.quote-wrapper {
+.quote-wrapper,
+.cta-container,
+.cta-box,
+footer {
   display: flex;
 }
 
@@ -69,7 +72,7 @@ footer {
   color: #e5e7eb;
 }
 
-.hero-button {
+.button {
   background-color: #3882f6;
   color: white;
   font-size: 1rem;
@@ -126,4 +129,42 @@ footer {
   margin: 0;
   align-self: flex-end;
   font-weight: bold;
+}
+
+.cta-container {
+  padding: 120px 0;
+}
+
+.cta-container,
+.cta-box {
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-box {
+  background-color: #3882f6;
+  color: #f9faf8;
+  gap: 120px;
+  padding: 35px 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.cta-info h3 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.cta-info h3,
+.cta-info p {
+  margin: 0;
+}
+
+.footer-button {
+  border: solid #f9faf8 1.5px;
+}
+
+footer {
+  height: 60px;
+  color: #f9faf8;
 }
