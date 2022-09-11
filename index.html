@@ -11,6 +11,7 @@
   </head>
   <body>
     <header class="header">
+      <div class="vw-wrapper">
         <nav class="main-nav">
           <ul>
             <li class="logo"><a href="#">Header Logo</a></li>
@@ -19,21 +20,22 @@
             <li><a href="#">header link three</a></li>
           </ul>
         </nav>
-        <div class="hero">
-          <div class="hero-text">
+        <div class="flex hero">
+          <div class="hero-text flex column">
             <h1>This Website is Awesome</h1>
             <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-            <button type="button" class="button" href="#">Sign Up</button>
+            <button type="button" class="button">Sign Up</button>
           </div>
           <div class="hero-image">
             <img src="https://placeimg.com/590/280/animals" alt="animal photo">
           </div>
         </div>
+      </div>
     </header>
     <main>
       <div class="main-content">
         <h2>Some random information.</h2>
-        <div class="main-gallery">
+        <div class="main-gallery flex">
           <div class="images">
             <img src="https://placeimg.com/210/210/animals" alt="animal photo">
             <p>This is some subtext under an illustration or an image</p>
@@ -54,11 +56,13 @@
       </div>
     </main>
     <div class="quote-wrapper">
-      <p class="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space or maybe people will actually read it, who know? All I know is that it looks nice.</p>
-      <p class="figcaption">- Thor, God of Thunder</p>
+      <div class="vw-wrapper flex column">
+        <p class="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space or maybe people will actually read it, who know? All I know is that it looks nice.</p>
+        <p class="figcaption">- Thor, God of Thunder</p>
+      </div>
     </div>
-    <div class="cta-container">
-      <div class="cta-box">
+    <div class="cta-container vw-wrapper flex">
+      <div class="cta-box flex">
         <div class="cta-info">
           <h3>Call to action! It's time!</h3>
           <p>Sign up for our product by clicking that button rigth over there!</p>
@@ -67,7 +71,7 @@
       </div>
     </div>
     <footer>
-      <span>Copyright &copy The Odin Project 2021</span>
+      <span>Copyright &copy; The Odin Project 2021</span>
     </footer>
   </body>
 </html>

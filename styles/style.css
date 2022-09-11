@@ -2,21 +2,20 @@
   font-family: 'Roboto', sans-serif;
 }
 
+
 body,
 .main-nav ul,
-.hero,
-.hero-text,
-.main-gallery,
-.main-images,
-.quote-wrapper,
-.cta-container,
-.cta-box,
+.flex,
 footer {
   display: flex;
 }
 
-body {
+body,
+.column {
   flex-direction: column;
+}
+
+body {
   margin: 0;
 }
 
@@ -28,9 +27,17 @@ a {
   text-decoration: none;
 }
 
+.vw-wrapper {
+  width: 70vw;
+  margin: 0 auto;
+}
+
 header,
 footer {
   background-color: #1f2937;
+}
+
+footer {
   justify-content: space-around;
   align-items: center;
 }
@@ -54,11 +61,6 @@ footer {
   padding: 120px 0;
   gap: 40px;
   justify-content: center;
-}
-
-.hero-text,
-.big-quote {
-  flex-direction: column;
 }
 
 .hero-text h1 {
@@ -85,6 +87,7 @@ footer {
 
 .main-content {
   text-align: center;
+  margin: 120px 0;
 }
 
 .main-content h2 {
